@@ -1,0 +1,111 @@
+*{padding: 0;margin: 0;box-sizing: border-box;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+body{
+    background:#EAFFD0;
+    /* color:#80ED99; */
+    /* color: #57CC99; */
+    /* color:white; */
+    color:#F38181;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+    color:#08D9D6;
+}
+p{
+    margin-bottom: 0;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* create time */
+.create_time input{
+    border:2px solid  #F38181;
+    outline:none;
+    background:transparent;
+    padding: 5px;
+    border-radius: 3px;
+    color: #000;
+    margin-right: 10px;
+    display:inline-block;
+    min-width: 300px;
+    display: block;
+    margin-bottom: 10px;
+}
+.create_time button{
+    background-color: #F38181;
+    border-radius: 5px;
+    padding: 8px 40px;
+    border:none;
+    outline:none;
+    color:white;
+}
+.create_time select{
+    background:transparent;
+    border-color: #F38181;
+    padding: 6.5px 10px;
+    border-width: 2px;
+    outline:none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+/* preview event */
+#preview .singlePreview{
+    padding: 10px;
+}
+#preview .singlePreview #time{
+    background-color: #F38181;
+    height: 150px;
+    border-radius: 7px;
+}
+#preview .singlePreview #time h3{
+    color: #EAFFD0;
+    text-align: center;
+    padding-top: 20px;
+}
+#preview .singlePreview #time .time{
+    padding: 10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: #fff;
+    font-size: 30px;
+}
+#preview .singlePreview #time p span.separate{
+    margin-left: 10px;
+    position: relative;
+    top: -2px;
+}
+
+
+/* footer */
+
+footer p{
+    position: fixed;
+    bottom:30px;
+    text-align: center;
+    left:50%;
+    transform: translateX(-50%);
+    color:#393E46;
+}
+footer p a{
+    color:#00ADB5;
+}
+
+
+
+/* responsive css */
+
+@media (max-width:768px){
+    footer p{
+        position: relative;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stop Watch</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Welcome text -->
+    <h1 class="text-center mt-3 mb-5">Smart Clock</h1>
+    <!-- create time -->
+    <div class="container create_time">
+        <div class="d-flex justify-content-center align-items-center mb-3">
+            <input type="number" placeholder="Enter Hour/Minutes/Seconds">
+            <select name="timeType" id="timeType">
+                <option value="hour">Hour</option>
+                <option value="min">Minutes</option>
+                <option value="sec">Seconds</option>
+            </select>
+        </div>
+        <div class="text-center mb-5">
+            <button>Create</button>
+        </div>
+    </div>
+    <!-- clock preview -->
+    <div class="container mb-5">
+        <div class="row" id="preview">
+            <div class="singlePreview col-sm-6 col-md-3">
+                <div id="time">
+                    <p><span id="p_hour"> 00</span></p>
+                    <p> <span class="separate"> : </span> <span id="p_min"> 00 </span></p>
+                    <p> <span class="separate"> : </span> <span id="p_sec"> 00 </span></p>
+                </div>
+                <!-- delete event -->
+            </div>
+            <div class="singlePreview col-sm-6 col-md-3">
+                <div id="time">
+                    <p><span id="p_hour"> 00</span></p>
+                    <p> <span class="separate"> : </span> <span id="p_min"> 00 </span></p>
+                    <p> <span class="separate"> : </span> <span id="p_sec"> 00 </span></p>
+                </div>
+                <!-- delete event -->
+            </div>
+            <div class="singlePreview col-sm-6 col-md-3">
+               <div id="time">
+                    <p><span id="p_hour"> 00</span></p>
+                    <p> <span class="separate"> : </span> <span id="p_min"> 00 </span></p>
+                    <p> <span class="separate"> : </span> <span id="p_sec"> 00 </span></p>
+                </div>
+                <!-- delete event -->
+            </div>
+            <div class="singlePreview col-sm-6 col-md-3">
+               <div id="time">
+                    <p><span id="p_hour"> 00 </span> </p>
+                    <p> <span class="separate"> : </span> <span id="p_min"> 00 </span></p>
+                    <p> <span class="separate"> : </span> <span id="p_sec"> 00 </span></p>
+                </div>
+                <!-- delete event -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2021 - <span id="year"></span> All Rights Reserved <a href="https://github.com/jahid757">Jahid Hasan</a></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
