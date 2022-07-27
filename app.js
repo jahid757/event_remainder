@@ -74,6 +74,7 @@ const timeIncrement = (secID, minID, hourID,catchHour) => {
       if (min > 0) {
         min -= 1;
         minute.innerText = min;
+      }
         if (min < 10) {
           minute.innerText = `0${min}`;
         }
@@ -94,9 +95,9 @@ const timeIncrement = (secID, minID, hourID,catchHour) => {
             clearInterval(interval);
           }
         }
-      }
+      // }
     }
-  }, 1000);
+  }, 100);
 };
 
 const idNumberBeforeCreateNewEvent = idDetect("preview").children.length + 1;
